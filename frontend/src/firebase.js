@@ -6,7 +6,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCwfVr9IZXksOzFKwnqOICUCX3YMXmqtRc",
+  apiKey: "*** Fill your own API key ***",
   authDomain: "vigilanceai-claims.firebaseapp.com",
   projectId: "vigilanceai-claims",
   storageBucket: "vigilanceai-claims.firebasestorage.app",
