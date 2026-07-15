@@ -1,0 +1,43 @@
+================================================================================
+SMARTCLAIM AI: AUTONOMOUS DAMAGE ANALYTICS & BLOCKCHAIN PAYOUT BOT
+================================================================================
+
+1. CORE BACKEND (Python Ecosystem)
+----------------------------------
+* Framework: FastAPI (Uvicorn ASGI)
+* Computer Vision: PyTorch, TorchVision (Faster R-CNN ResNet-50 FPN)
+* Deep Learning: Integrated AI Damage Identification & Severity Scoring
+* Fraud Detection: Scikit-learn (Random Forest Classifier)
+* Data Science: Pandas, NumPy, Scipy (Entropy & Feature Engineering)
+* Blockchain: Web3.py (Direct Transaction Signing & Hoodi Testnet Integration)
+* Environment: Python Dotenv (Secure Private Key Management)
+
+2. FRONTEND (React Ecosystem)
+-----------------------------
+* Framework: Vite + React 18
+* Design: Modern Dark Glassmorphism (Vanilla CSS with dynamic backdrop-filters)
+* Icons: Lucide-React (Futuristic dashboard iconography)
+* Visuals: Interactive 3D Particle System (Cursor-linked Canvas engine)
+* State Management: React Hooks (useState, useEffect)
+* API Client: Axios (with 30s Blockchain timeout logic)
+
+3. CLOUD & WEB3 INFRASTRUCTURE
+------------------------------
+* Database: Google Firebase Firestore (NoSQL Claims Ledger)
+* IPFS: Mock IPFS Content Addressing (Immutable data anchoring)
+* Network: Hoodi Testnet (EVM Compatibility)
+* Wallet: Server-side Hardware Wallet (Direct Automation Bot)
+* Chain ID: 560048 (Hoodi Network)
+* Oracle Logic: Standardized USD to ETH Real-time Conversion
+
+4. UI/UX ANIMATIONS & EFFECTS
+-----------------------------
+* Laser Bio-Scanner: CSS Keyframe Laser scrubbing animation
+* Holographic Ledger: Monospace terminal log for blockchain mempool status
+* Anti-Gravity Cards: Floating glass panels with vertical suspension
+* Input Overdrive: RGB-shift glitch effect on credential errors
+* Scanlines Overlay: CRT-style persistent viewport texture
+
+================================================================================
+STATUS: FULLY OPERATIONAL // DEPLOYED ON LOCALHOST:5173
+================================================================================

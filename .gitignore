@@ -1,0 +1,67 @@
+# ----------------------------
+# Dependencies
+# ----------------------------
+node_modules/
+
+# ----------------------------
+# Build / Generated folders
+# ----------------------------
+build/
+dist/
+out/
+target/
+Delta_Build_MI/
+outputs/
+data/
+
+# ----------------------------
+# Logs & temp files
+# ----------------------------
+*.log
+logs/
+LOGS.txt
+tmp/
+temp/
+
+*.pth
+notebooks/*.pth
+
+# ----------------------------
+# Environment / secrets
+# ----------------------------
+.env
+.env.*
+*.key
+*.pem
+secrets.json
+backend/firebase-credentials.json
+# ----------------------------
+# Data (IGNORE only if large/generated)
+# ----------------------------
+data/
+
+# ----------------------------
+# Python / Notebook cache
+# ----------------------------
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# ----------------------------
+# IDE / Editor files
+# ----------------------------
+.vscode/
+.idea/
+*.iml
+*.swp
+
+# ----------------------------
+# OS files
+# ----------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# Unnecessary documents
+# ----------------------------
+*.docx

@@ -1,0 +1,22 @@
+[
+ {
+  "id": 0,
+  "label": "A frame from the video at 00:00:00",
+  "timestamp": "00:00:00"
+ },
+ {
+  "id": 1,
+  "label": "A frame from the video at 00:00:01",
+  "timestamp": "00:00:01"
+ },
+ {
+  "id": 2,
+  "label": "A frame from the video at 00:00:03",
+  "timestamp": "00:00:03"
+ },
+ {
+  "id": 3,
+  "label": "A frame from the video at 00:00:05",
+  "timestamp": "00:00:05"
+ }
+]

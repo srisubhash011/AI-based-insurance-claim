@@ -1,0 +1,45 @@
+# Goal Description
+The objective is to build a complete, final web application that integrates the trained Machine Learning models ([best_model.pth](file:///c:/Users/HP/Desktop/desktop/OPEN%20LAB/OPENLAB_PROJECT/notebooks/best_model.pth) for damage detection and [fraud_rf_model.pkl](file:///c:/Users/HP/Desktop/desktop/OPEN%20LAB/OPENLAB_PROJECT/notebooks/fraud_rf_model.pkl) for fraud classification). The application will feature a FastAPI backend to run the AI inference and a modern, premium frontend built with React and Vite to allow users to upload images and view the fraud analysis results.
+
+## User Review Required
+> [!IMPORTANT]
+> Since we are skipping the full Firebase/Blockchain architecture for now to focus on the core "Final Website" with the models, I will build:
+> 1. A Python **FastAPI Backend** to handle the heavy ML inference.
+> 2. A **React (Vite) Frontend** with highly polished, modern CSS to serve as the user portal.
+> 
+> Does this approach align with exactly what you want to see right now?
+
+## Proposed Changes
+
+### Backend (Python/FastAPI)
+The backend will serve as the AI inference engine.
+#### [NEW] `backend/requirements.txt`
+Dependencies including `fastapi`, `uvicorn`, `torch`, `torchvision`, `pandas`, `scikit-learn`, `numpy`, `pillow`, `python-multipart`.
+#### [NEW] `backend/main.py`
+The FastAPI application that:
+- Loads the Mask R-CNN [best_model.pth](file:///c:/Users/HP/Desktop/desktop/OPEN%20LAB/OPENLAB_PROJECT/notebooks/best_model.pth).
+- Loads the Random Forest [fraud_rf_model.pkl](file:///c:/Users/HP/Desktop/desktop/OPEN%20LAB/OPENLAB_PROJECT/notebooks/fraud_rf_model.pkl).
+- Exposes a `POST /api/predict` endpoint accepting an image file. It will run the image through the damage model, extract the 13 geometric features using your exact `extract_features` logic, run the fraud model, and return the bounding boxes, features, and fraud probability.
+
+### Frontend (React/Vite)
+A gorgeous, modern UI for the user to upload the image and view the analysis.
+#### [NEW] `frontend/`
+We will initialize a new React app using Vite (`npx create-vite-app`).
+#### [NEW] `frontend/src/App.jsx`
+The main dashboard where the user can drag and drop a vehicle image.
+#### [NEW] `frontend/src/components/ImageUploader.jsx`
+Component handling the image upload and preview.
+#### [NEW] `frontend/src/components/AnalysisResults.jsx`
+Component that parses the API response. It will draw the bounding boxes on top of the image and display a dashboard of the Fraud Score and Extracted Features.
+#### [NEW] `frontend/src/index.css`
+A premium Vanilla CSS stylesheet utilizing modern design trends (dark mode, glassmorphism, smooth animations) to make the app look stunning.
+
+## Verification Plan
+
+### Automated Tests
+- We will verify the backend API by sending a sample image via a Python script or cURL to ensure it returns the correct JSON structure without crashing.
+- We will verify the frontend builds successfully using `npm run build`.
+
+### Manual Verification
+- We will run the FastAPI server and the Vite dev server locally.
+- We will open the application in the browser, upload a test image from the dataset, and visually verify that the bounding boxes are drawn correctly and the fraud score is displayed accurately.
